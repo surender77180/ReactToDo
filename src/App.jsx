@@ -1,9 +1,7 @@
-import './App.css'
-function App() {
+import Todo from "./Todo";
 
+export default function App() {
   return (
-   <h1>hello surender</h1>
+   <Todo />
   )
-}
-
-export default App
+} 
