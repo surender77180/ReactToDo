@@ -15,7 +15,7 @@ export default function Todo() {
         <Button variant="outline-success" onClick={() => setData([...data, cat])} className='mb-1' >Add</Button>
 
         {data.map((dt)=>{
-          return (<h1>{dt}</h1>)
+          return (<ol>{dt}</ol>)
         })}
        
 
