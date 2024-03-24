@@ -13,14 +13,10 @@ export default function Todo() {
       <form onSubmit={(e) => e.preventDefault()}>
         <input type='text' value={cat} name='cname' onChange={(eve) => setCat(eve.target.value)} placeholder='Add dictionary' className="p-1 m-4" />
         <Button variant="outline-success" onClick={() => setData([...data, cat])} className='mb-1' >Add</Button>
-
-        {data.map((dt)=>{
+        {data.map((dt) => {
           return (<ol>{dt}</ol>)
         })}
-       
-
       </form>
     </>
-
   )
 }
